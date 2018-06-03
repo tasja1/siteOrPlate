@@ -1,0 +1,572 @@
+body{
+  font-family: helvetica;
+}
+
+
+header{
+  background-image: url(dubplaat.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+header h1{
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+h3{
+  position: absolute;
+  top: 45px;
+  left: 230px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.logoZwartWit{
+  position: absolute;
+  top: 5px;
+  height: 102px;
+}
+
+.extraZwarteBalk{
+  background-color: black;
+  opacity: 0.5;
+  width: 100vw;
+  height: 15vh;
+}
+
+
+
+header .tekstenInHeader p{
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  width: 50vh;
+  padding-top: 10px;
+  opacity: 0.8;
+}
+
+.tekstenInHeader{
+  width: 60px;
+  height: 90px;
+  position: absolute;
+  right: 390px;
+  bottom: 250px;
+}
+
+
+
+
+.scrollen{
+  position: absolute;
+  left: 10vh;
+  bottom: 20px;
+  opacity: 0.8;
+}
+
+.scrollen img{
+  height: 70px;
+}
+
+.scrollen p{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+main{
+  background-image: url(patroon-main.gif);
+  color: white;
+}
+
+.mainArtiesten,
+.mainHomepagePlaten,
+.mainEvenementHomepage,
+.mainMail,
+.mainTicketsKopen{
+  background-color: #473732;
+  opacity: 0.975;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  padding: 25px;
+}
+
+div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1{
+  color: black;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+
+
+
+.chuffelplaten{
+  height: 150px;
+  width: 150px;
+}
+
+.verzamelingPlaten{
+  position: relative;
+}
+
+.voorkantenPlatenChuffel{
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.voorkantenPlatenChuffel1{
+  animation-name: platengalerij1;
+  }
+
+  @keyframes platengalerij1 {
+    0%{
+      opacity: 1;
+    }
+    25%{
+      opacity: 1;
+    }
+    27%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .voorkantenPlatenChuffel2{
+    animation-name: platengalerij2;
+  }
+
+  @keyframes platengalerij2 {
+    0%{
+      opacity: 0;
+    }
+    23%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 1;
+    }
+    52%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .voorkantenPlatenChuffel3{
+    animation-name: platengalerij3;
+  }
+
+  @keyframes platengalerij3 {
+    0%{
+      opacity: 0;
+    }
+    48%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    76%{
+      opacity: 1;
+    }
+    78%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+
+  .voorkantenPlatenChuffel4{
+    animation-name: platengalerij4;
+  }
+
+  @keyframes platengalerij4 {
+    0%{
+      opacity: 0;
+    }
+    73%{
+      opacity: 0;
+    }
+    75%{
+      opacity: 1;
+    }
+    98%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+
+.groep{
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 50px;
+}
+
+body main .persoonlijkVerhaal{
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+.platen{
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+
+.platenalbumsHomepage{
+ position: absolute;
+ height: 300px;
+ top: 0px;
+ left: 0px;
+ -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.achterkant{
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY(180deg);
+}
+
+.album{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.album:hover{
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+.prijs{
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.kopen{
+  width: 70px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  margin-left: 280px;
+}
+
+label{
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+input{
+  width: 335px;
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+
+
+.heightAanpassenPlaten{
+  height: 100px;
+}
+
+
+
+
+.mainMail div{
+  text-align: left
+}
+
+.mainMail{
+  height: 467px;
+}
+
+.mainMail div  h6{
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 16px;
+  padding-top: 80px;
+}
+
+.contactgegevens{
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+label{
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+input{
+  margin: auto;
+  width: 335px;
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+
+.tweedeInput{
+  width: 400px;
+  height: 170px;
+}
+
+.derdeInput{
+width: 100px;
+}
+
+
+
+
+.mainEvenementHomepage{
+  height: 30vw;
+  background-image: url(evenement-v.png);
+  background-size: cover;
+  opacity: 1;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.mainEvenementHomepage a{
+  text-decoration: none;
+  color: white;
+  font-size: 70px;
+  position: relative;
+  top: 350px;
+  left: 430px;
+}
+
+.mainEvenementHomepage a:hover{
+   color: #EEEDED;
+}
+
+
+
+
+footer{
+  background-color:  #473732;
+}
+
+footer h5{
+  padding: 7px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.headerTickets{
+  height: 15vh;
+  background-position: center;
+}
+
+.mainTicketsKopen img:nth-child(1){
+  display: none;
+  area: a;
+}
+
+.mainTicketsKopen .ticketEnTekst img:nth-child(1){
+  height: 15vh;
+  padding: 62.5px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainTicketsKopen p{
+  padding: 35px;
+  padding-top: 0px;
+}
+
+.tekstTickets{
+  area: b;
+}
+
+.kopenButton{
+  area: c;
+}
+
+.kopenTicketsButton{
+  font-size: 20px;
+  padding: 7px;
+  margin-left: 35px;
+}
+
+
+
+                @supports (grid-area: auto){
+                    @media (min-width: 800px) {
+
+                       .groep{
+                         margin-left: 50px;
+                         margin-right: 50px;
+                       }
+
+                       .deArtiestenHunPlaten{
+                         display: grid;
+                         grid-template-columns: 1fr 1fr;
+                       }
+
+                       .kopen{
+                         margin-left: 120px;
+                       }
+
+                       .deArtiestenHunPlaten{
+                         margin-left: 10px;
+                         margin-right: 10px;
+                       }
+                    }
+
+
+                    @media (min-width: 1000px){
+                      .deArtiestenHunPlaten{
+                        margin-left: 80px;
+                        margin-right: 80px;
+                      }
+                    }
+
+                        @media (min-width: 1100px){
+                          .gridjeContactEnMail{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                          }
+
+                          .groep{
+                            margin-left: 75px;
+                            margin-right: 75px;
+                          }
+
+                          .deArtiestenHunPlaten{
+                            margin-left: 150px;
+                            margin-right: 150px;
+                          }
+
+
+                          .mainTicketsKopen img:nth-child(1){
+                            height: 50vh;
+                            padding: 62.5px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                          }
+
+                          .mainTicketsKopen{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-areas:
+                            "a b"
+                            "c c"
+                          }
+
+                        }
+
+                          @media (min-width: 1200px){
+                            .deArtiestenHunPlaten{
+                              margin-left: 180px;
+                              margin-right: 180px;
+                            }
+
+                          }
+
+                            @media (min-width: 1400px){
+                              .mainMail .gridjeContactEnMail div{
+                                margin-left: 80px;
+                              }
+
+                              .mainHomepagePlaten{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                              }
+
+                              .platen{
+                                margin: 10px;
+                              }
+
+                              .deArtiestenHunPlaten{
+                                margin-left: auto;
+                                margin-right: auto;
+                              }
+
+                              .mainArtiesten{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                              }
+
+                              .heightAanpassen{
+                                height: 145px;
+                              }
+
+
+                              .groep{
+                                margin-left: 90px;
+                                margin-right: 90px;
+                              }
+
+                          }
+                }
